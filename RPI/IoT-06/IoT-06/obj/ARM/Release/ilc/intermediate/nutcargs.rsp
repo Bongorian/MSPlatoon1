@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\ILTransformed\IoT-06.metadata"
+/reflectionMetadataAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\ILTransformed\IoT-06.csv"
+/sharedGenericsMode StandardHeuristics
+/in "C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\ILTransformed\IoT-06.ilexe"
+/out "C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\MDIL\IoT-06.mdilexe"

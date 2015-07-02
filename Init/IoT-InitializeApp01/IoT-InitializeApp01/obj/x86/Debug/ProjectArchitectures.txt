@@ -1,0 +1,1 @@
+C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-InitializeApp01\IoT-InitializeApp01\IoT-InitializeApp01.csproj;x86

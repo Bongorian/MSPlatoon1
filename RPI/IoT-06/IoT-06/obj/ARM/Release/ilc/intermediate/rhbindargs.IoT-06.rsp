@@ -1,0 +1,15 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\vmath.lib"
+/methodBodyFolding
+"C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\MDIL\IoT-06.mdilexe"
+"/i:C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\MDIL\"
+/out:"C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\Native\IoT-06.exe"
+"/res:C:\Users\kurosuke\Source\Repos\MSP-IoT\IoT-06\IoT-06\obj\ARM\Release\ilc\intermediate\Native.res"
+/standalone
+/shimexe
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\Interop.Native.lib"
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\corelib.native.lib"

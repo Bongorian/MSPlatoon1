@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="IoT_InitializeApp01.InitPage01"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:IoT_InitializeApp01"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <DataTemplate x:Key="colorTemplate">
+            <Rectangle Margin="0" Fill="{Binding Path=color}" Width="100" Height="100"/>
+        </DataTemplate>
+
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="1" Orientation="Vertical">
+                <StackPanel.Resources>
+                    <Style TargetType="TextBlock">
+                        <Setter Property="FontSize" Value="60"/>
+                    </Style>
+                    <Style TargetType="TextBox">
+                        <Setter Property="Margin" Value="60,0,0,0"/>
+                        <Setter Property="FontSize" Value="60"/>
+                    </Style>
+                </StackPanel.Resources>
+                <TextBlock>名前を入力（スクリーンに表示されます）</TextBlock>
+                <TextBox x:ConnectionId='2' x:Name="nameBox"></TextBox>
+                <TextBlock>自分の色を選ぶ</TextBlock>
+                <GridView x:ConnectionId='3' Margin="60,0,0,0" x:Name="colorGrid" ItemsSource="{Binding}" ItemTemplate="{StaticResource colorTemplate}">
+                </GridView>
+                <Border BorderThickness="1" BorderBrush="Aqua" HorizontalAlignment="Stretch" Margin="20,50"></Border>
+                <TextBlock>ゲーム番号</TextBlock>
+                <TextBox x:ConnectionId='4' x:Name="gameNumBox"></TextBox>
+                <TextBlock>杖番号</TextBlock>
+                <TextBox x:ConnectionId='5' x:Name="stickNumBox"></TextBox>
+                <TextBlock FontSize="30">※上記二つは係が入力（半角数字）</TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button x:ConnectionId='1' VerticalAlignment="Stretch" Width="200" HorizontalAlignment="Right" Margin="0,0,50,20"                           >次へ</Button>
+        </Grid>
+    </Grid>
+
+</Page>
+
